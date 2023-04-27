@@ -8,9 +8,9 @@ import java.awt.event.*;
 		private JButton btcomprar;
 		private JRadioButton rbcredito, rbdinheiro, rbdebito;
 		private JCheckBox ckbanana, maca, uva, pera, abacaxi, melancia;
-		private JLabel Jabacaxi, Jbanana, Jmaça, Jmelancia, Jpera, Juva, jlmensagem, bemvindo;
+		private JLabel Jabacaxi, Jbanana, Jmaça, Jmelancia, Jpera, Juva, jlmensagem, jlmensagem2, bemvindo;
 		private ImageIcon iabacaxi, ibanana, imaça, imelancia, ipera, iuva;
-		
+		private int total=0, peraPR=0, macaPR=0, bananaPR=0,abacaxiPR=0, melanciaPR=0,uvaPR=0;
 		
 		
 		
@@ -120,55 +120,76 @@ import java.awt.event.*;
 			jlmensagem.setBounds(150,270,1000,50);
 			add(jlmensagem);
 			
+			jlmensagem2= new JLabel("");
+			jlmensagem2.setBounds(160,290,500,50);
+			add(jlmensagem2);
+			
+			
 		}
 		
 		private void definirEventos() {
 			btcomprar.addActionListener(new ActionListener(){
-				public void actionPerformed(ActionEvent arg0){	
-			if(rbcredito.isSelected()) {
-				jlmensagem.setText("A forma escolhida de pagamento foi crédito. Frutas escolhidas:");
-			}else if(rbdebito.isSelected()) {
-				jlmensagem.setText("A forma escolhida de pagamento foi débito. Frutas escolhidas:");
-			}else if(rbdinheiro.isSelected()) {
-				jlmensagem.setText("A forma de pagamento escolhida foi dinheiro. Frutas escolhidas:");
-			}
-			
-			if(ckbanana.isSelected()) {
-				Jbanana.setVisible(true);
-			}else {
-				Jbanana.setVisible(false);
-			}
-			
-			if(maca.isSelected()) {
-				Jmaça.setVisible(true);
-			}else {
-				Jmaça.setVisible(false);
-			}
-			
-			if(abacaxi.isSelected()) {
-				add(Jabacaxi);
-				Jabacaxi.setVisible(true);
-			}else {
-				Jabacaxi.setVisible(false);
-			}
-			
-			if(pera.isSelected()) {
-				Jpera.setVisible(true);
-			}else {
-				Jpera.setVisible(false);
-			}
-			
-			if(uva.isSelected()) {
-				Juva.setVisible(true);
-			}else {
-				Juva.setVisible(false);
-			}
-			
-			if(melancia.isSelected()) {
-				Jmelancia.setVisible(true);
-			}else {
-				Jmelancia.setVisible(false);
-			}
+				public void actionPerformed(ActionEvent arg0){
+					
+					if(rbcredito.isSelected()) {
+						jlmensagem.setText("A forma escolhida de pagamento foi crédito. Frutas escolhidas:");
+					}else if(rbdebito.isSelected()) {
+						jlmensagem.setText("A forma escolhida de pagamento foi débito. Frutas escolhidas:");
+					}else if(rbdinheiro.isSelected()) {
+						jlmensagem.setText("A forma de pagamento escolhida foi dinheiro. Frutas escolhidas:");
+					}
+					
+					if(ckbanana.isSelected()) {
+						Jbanana.setVisible(true);
+						bananaPR=7;
+					}else {
+						Jbanana.setVisible(false);
+						bananaPR=0;
+					}
+					
+					if(maca.isSelected()) {
+						macaPR=6;
+						Jmaça.setVisible(true);
+					}else {
+						Jmaça.setVisible(false);
+						macaPR=0;
+					}
+					
+					if(abacaxi.isSelected()) {
+						abacaxiPR=10;
+						Jabacaxi.setVisible(true);
+					}else {
+						Jabacaxi.setVisible(false);
+						abacaxiPR=0;
+					}
+					
+					if(pera.isSelected()) {
+						peraPR=13;
+						Jpera.setVisible(true);
+					}else {
+						Jpera.setVisible(false);
+						peraPR=0;
+					}
+					
+					if(uva.isSelected()) {
+						uvaPR=10;
+						Juva.setVisible(true);
+					}else {
+						Juva.setVisible(false);
+						uvaPR=0;
+					}
+					
+					if(melancia.isSelected()) {
+						melanciaPR=20;
+						Jmelancia.setVisible(true);
+					}else {
+						Jmelancia.setVisible(false);
+						melanciaPR=0;
+					}
+					
+					
+					total=macaPR+bananaPR+peraPR+abacaxiPR+uvaPR+melanciaPR;
+					jlmensagem2.setText(String.format("Total em R$: %d",total));
 			
 		}
 			});
