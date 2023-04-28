@@ -24,40 +24,40 @@ import java.awt.event.*;
 			
 			bemvindo = new JLabel("Bem vindo ao Hortifrúti zé Rodolfo. Faça suas compras");
 			bemvindo.setForeground(Color.blue);
-			bemvindo.setBounds(320, 0, 500, 50);
+			bemvindo.setBounds(340, 0, 500, 50);
 			add(bemvindo);
 			
-			iabacaxi = new ImageIcon("C:\\Users\\Ana Paula\\eclipse-workspace\\terceirosemestre\\src\\sacolao\\imgs\\abacaxi1.png");
+			iabacaxi = new ImageIcon("C:\\Users\\Ana Paula\\eclipse-workspace\\terceirosemestre\\src\\sacolao\\imgs\\abacaxi.png");
 			Jabacaxi = new JLabel(iabacaxi);
 			Jabacaxi.setBounds(0, 320, 170, 300);
 			add(Jabacaxi);
 		    Jabacaxi.setVisible(false);
 			
-			ibanana = new ImageIcon("C:\\Users\\Ana Paula\\eclipse-workspace\\terceirosemestre\\src\\sacolao\\imgs\\banana.jpg");
+			ibanana = new ImageIcon("C:\\Users\\Ana Paula\\eclipse-workspace\\terceirosemestre\\src\\sacolao\\imgs\\banana.png");
 			Jbanana = new JLabel(ibanana);
 			Jbanana.setBounds(150 ,320 , 180, 300);
 			add(Jbanana);
 			Jbanana.setVisible(false);
 			
-			imaça = new ImageIcon("C:\\Users\\Ana Paula\\eclipse-workspace\\terceirosemestre\\src\\sacolao\\imgs\\maça.jpg");
+			imaça = new ImageIcon("C:\\Users\\Ana Paula\\eclipse-workspace\\terceirosemestre\\src\\sacolao\\imgs\\maca.png");
 			Jmaça = new JLabel(imaça);
 			Jmaça.setBounds(325, 320, 180, 300);
 			add(Jmaça);
 			Jmaça.setVisible(false);
 				
-			ipera = new ImageIcon("C:\\Users\\Ana Paula\\eclipse-workspace\\terceirosemestre\\src\\sacolao\\imgs\\pera.jpg");
+			ipera = new ImageIcon("C:\\Users\\Ana Paula\\eclipse-workspace\\terceirosemestre\\src\\sacolao\\imgs\\pera.png");
 			Jpera= new JLabel(ipera);
 			Jpera.setBounds(507, 320, 180, 300);
 			add(Jpera);
 			Jpera.setVisible(false);
 			
-			iuva = new ImageIcon("C:\\Users\\Ana Paula\\eclipse-workspace\\terceirosemestre\\src\\sacolao\\imgs\\uva1.jpg");
+			iuva = new ImageIcon("C:\\Users\\Ana Paula\\eclipse-workspace\\terceirosemestre\\src\\sacolao\\imgs\\uva.png");
 			Juva= new JLabel(iuva);
 			Juva.setBounds(687,320, 180, 300);
 			add(Juva);
 			Juva.setVisible(false);
 			
-			imelancia = new ImageIcon("C:\\Users\\Ana Paula\\eclipse-workspace\\terceirosemestre\\src\\sacolao\\imgs\\melancia.jpg");
+			imelancia = new ImageIcon("C:\\Users\\Ana Paula\\eclipse-workspace\\terceirosemestre\\src\\sacolao\\imgs\\melancia.png");
 			Jmelancia= new JLabel(imelancia);
 			Jmelancia.setBounds(870, 320, 180, 300);
 			add(Jmelancia);
