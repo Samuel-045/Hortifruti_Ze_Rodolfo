@@ -11,6 +11,7 @@ import java.awt.event.*;
 		private JLabel Jabacaxi, Jbanana, Jmaça, Jmelancia, Jpera, Juva, jlmensagem, jlmensagem2, bemvindo;
 		private ImageIcon iabacaxi, ibanana, imaça, imelancia, ipera, iuva;
 		private int total=0, peraPR=0, macaPR=0, bananaPR=0,abacaxiPR=0, melanciaPR=0,uvaPR=0;
+		private ButtonGroup grpBtt;
 		
 		
 		
@@ -124,7 +125,10 @@ import java.awt.event.*;
 			jlmensagem2.setBounds(160,290,500,50);
 			add(jlmensagem2);
 			
-			
+			grpBtt = new ButtonGroup();
+			grpBtt.add(rbcredito);
+			grpBtt.add(rbdebito);
+			grpBtt.add(rbdinheiro);
 		}
 		
 		private void definirEventos() {
@@ -132,9 +136,9 @@ import java.awt.event.*;
 				public void actionPerformed(ActionEvent arg0){
 					
 					if(rbcredito.isSelected()) {
-						jlmensagem.setText("A forma escolhida de pagamento foi crédito. Frutas escolhidas:");
+						jlmensagem.setText("A forma de pagamento escolhida foi crédito. Frutas escolhidas:");
 					}else if(rbdebito.isSelected()) {
-						jlmensagem.setText("A forma escolhida de pagamento foi débito. Frutas escolhidas:");
+						jlmensagem.setText("A forma de pagamento escolhida foi débito. Frutas escolhidas:");
 					}else if(rbdinheiro.isSelected()) {
 						jlmensagem.setText("A forma de pagamento escolhida foi dinheiro. Frutas escolhidas:");
 					}
