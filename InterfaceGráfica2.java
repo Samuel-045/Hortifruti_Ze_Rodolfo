@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.*; 
 	
         public class InterfaceGráfica2 extends JPanel{
-		private JButton btcomprar;
+		private JButton btcomprar, btfinalizar;
 		private JRadioButton rbcredito, rbdinheiro, rbdebito;
 		private JCheckBox ckbanana, maca, uva, pera, abacaxi, melancia;
 		private JLabel Jabacaxi, Jbanana, Jmaça, Jmelancia, Jpera, Juva, jlmensagem, jlmensagem2, bemvindo;
@@ -68,6 +68,12 @@ import java.awt.event.*;
 			btcomprar = new JButton("Comprar");
 			btcomprar.setBounds(450,250,100,20);
 			add(btcomprar);
+			
+			//botão para finalizar compra, que só aparece após os produtos serem comprados
+			btfinalizar = new JButton("Finalizar compra");
+			btfinalizar.setBounds(800, 640, 150, 30);
+			add(btfinalizar);
+			btfinalizar.setVisible(false);
 			
 			//forma pagamento
 			//credito
@@ -134,6 +140,7 @@ import java.awt.event.*;
 		private void definirEventos() {
 			btcomprar.addActionListener(new ActionListener(){
 				public void actionPerformed(ActionEvent arg0){
+										
 					
 					if(rbcredito.isSelected()) {
 						jlmensagem.setText("A forma de pagamento escolhida foi crédito. Frutas escolhidas:");
@@ -194,10 +201,18 @@ import java.awt.event.*;
 					total=macaPR+bananaPR+peraPR+abacaxiPR+uvaPR+melanciaPR;
 					jlmensagem2.setText(String.format("Total em R$: %d",total));
 					
-					 
+					btfinalizar.setVisible(true);
 			
 		}
 			});
+			
+			btfinalizar.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+					JOptionPane.showMessageDialog(null, "Compra finalizada. Valor = R$"+total, "Mensagem de finalização de compra", JOptionPane.INFORMATION_MESSAGE);
+					System.exit(0);
+					
+				}
+			}) ;
 			
 		}
 				
@@ -205,7 +220,7 @@ import java.awt.event.*;
 		 JFrame frame = new JFrame("Hortifrúti do zé Rodolfo");
 		 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		 frame.getContentPane().add(new InterfaceGráfica2());
-		 frame.setBounds(100,5,1080,670);
+		 frame.setBounds(100,0,1080,730);
 		 frame.validate();
 		 frame.setVisible(true);
 	}
