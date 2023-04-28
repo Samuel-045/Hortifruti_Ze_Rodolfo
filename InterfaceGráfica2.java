@@ -65,18 +65,18 @@ import java.awt.event.*;
 			//botão de comprar
 			setLayout(null);
 			btcomprar = new JButton("Comprar");
-			btcomprar.setBounds(400,250,100,20);
+			btcomprar.setBounds(450,250,100,20);
 			add(btcomprar);
 			
 			//forma pagamento
 			//credito
 			rbcredito = new JRadioButton("Crédito");
-			rbcredito.setBounds(400,200,100,25);
+			rbcredito.setBounds(450,200,100,25);
 			add(rbcredito);                                       /////
 			
 			//debito
 			rbdebito = new JRadioButton("Débito");
-			rbdebito.setBounds(700,200,100,25);
+			rbdebito.setBounds(800,200,100,25);
 			add(rbdebito);                                        /////
 			
 			//Dinheiro
@@ -87,12 +87,12 @@ import java.awt.event.*;
 			//frutas (produtos)
 			//banana
 			ckbanana = new  JCheckBox("Banana R$7,00");
-			ckbanana.setBounds(400,125,150,25);
+			ckbanana.setBounds(450,125,150,25);
 			add(ckbanana);
 			
 			//maça
 			maca = new  JCheckBox("Maça R$6,00");
-			maca.setBounds(700,125,150,25);
+			maca.setBounds(800,125,150,25);
 			add(maca);
 			
 			//banana
@@ -102,12 +102,12 @@ import java.awt.event.*;
 			
 			//pera
 			pera = new  JCheckBox("Pera R$13,00");
-			pera.setBounds(400,75,150,25);
+			pera.setBounds(450,75,150,25);
 			add(pera);
 			
 			//abacaxi
 			abacaxi = new  JCheckBox("Abacaxi R$10,00");
-			abacaxi.setBounds(700,75,150,25);
+			abacaxi.setBounds(800,75,150,25);
 			add(abacaxi);
 			
 			//melancia
@@ -187,9 +187,10 @@ import java.awt.event.*;
 						melanciaPR=0;
 					}
 					
-					
 					total=macaPR+bananaPR+peraPR+abacaxiPR+uvaPR+melanciaPR;
 					jlmensagem2.setText(String.format("Total em R$: %d",total));
+					
+					 
 			
 		}
 			});
