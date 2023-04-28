@@ -199,7 +199,7 @@ import java.awt.event.*;
 					}
 					
 					total=macaPR+bananaPR+peraPR+abacaxiPR+uvaPR+melanciaPR;
-					jlmensagem2.setText(String.format("Total em R$: %d",total));
+					jlmensagem2.setText(String.format("Total em R$: %d,00",total));
 					
 					btfinalizar.setVisible(true);
 			
@@ -208,7 +208,7 @@ import java.awt.event.*;
 			
 			btfinalizar.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
-					JOptionPane.showMessageDialog(null, "Compra finalizada. Valor = R$"+total, "Mensagem de finalização de compra", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, "Compra finalizada. Valor = R$"+total+",00", "Mensagem de finalização de compra", JOptionPane.INFORMATION_MESSAGE);
 					System.exit(0);
 					
 				}
