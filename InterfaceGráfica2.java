@@ -27,37 +27,37 @@ import java.awt.event.*;
 			bemvindo.setBounds(340, 0, 500, 50);
 			add(bemvindo);
 			
-			iabacaxi = new ImageIcon("C:\\Users\\Ana Paula\\eclipse-workspace\\terceirosemestre\\src\\sacolao\\imgs\\abacaxi.png");
+			iabacaxi = new ImageIcon(getClass().getResource("\\imgs\\abacaxi.png"));
 			Jabacaxi = new JLabel(iabacaxi);
 			Jabacaxi.setBounds(0, 320, 170, 300);
 			add(Jabacaxi);
 		    Jabacaxi.setVisible(false);
 			
-			ibanana = new ImageIcon("C:\\Users\\Ana Paula\\eclipse-workspace\\terceirosemestre\\src\\sacolao\\imgs\\banana.png");
+			ibanana = new ImageIcon(getClass().getResource("\\imgs\\banana.png"));
 			Jbanana = new JLabel(ibanana);
 			Jbanana.setBounds(150 ,320 , 180, 300);
 			add(Jbanana);
 			Jbanana.setVisible(false);
 			
-			imaça = new ImageIcon("C:\\Users\\Ana Paula\\eclipse-workspace\\terceirosemestre\\src\\sacolao\\imgs\\maca.png");
+			imaça = new ImageIcon(getClass().getResource("\\imgs\\maca.png"));
 			Jmaça = new JLabel(imaça);
 			Jmaça.setBounds(325, 320, 180, 300);
 			add(Jmaça);
 			Jmaça.setVisible(false);
 				
-			ipera = new ImageIcon("C:\\Users\\Ana Paula\\eclipse-workspace\\terceirosemestre\\src\\sacolao\\imgs\\pera.png");
+			ipera = new ImageIcon(getClass().getResource("\\imgs\\pera.png"));
 			Jpera= new JLabel(ipera);
 			Jpera.setBounds(507, 320, 180, 300);
 			add(Jpera);
 			Jpera.setVisible(false);
 			
-			iuva = new ImageIcon("C:\\Users\\Ana Paula\\eclipse-workspace\\terceirosemestre\\src\\sacolao\\imgs\\uva.png");
+			iuva = new ImageIcon(getClass().getResource("\\imgs\\uva.png"));
 			Juva= new JLabel(iuva);
 			Juva.setBounds(687,320, 180, 300);
 			add(Juva);
 			Juva.setVisible(false);
 			
-			imelancia = new ImageIcon("C:\\Users\\Ana Paula\\eclipse-workspace\\terceirosemestre\\src\\sacolao\\imgs\\melancia.png");
+			imelancia = new ImageIcon(getClass().getResource("\\imgs\\melancia.png"));
 			Jmelancia= new JLabel(imelancia);
 			Jmelancia.setBounds(870, 320, 180, 300);
 			add(Jmelancia);
