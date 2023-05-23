@@ -1,7 +1,7 @@
 # Hortifruti_Ze_Rodolfo
 <p align="center">
   <img src="https://img.shields.io/github/last-commit/Samuel-045/Hortifruti_Ze_Rodolfo?color=blue&label=LAST%20COMMIT&logo=last_commit">
-  <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=blue&style=flat">
+  <img src="http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=blue&style=flat">
 </p>
 
 <h2> Descrição</h2>
